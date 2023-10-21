@@ -8,7 +8,7 @@ public class Main {
     }
 
 
-    // My solutions - I could have simplified, This was before the instructor revealed their answer
+    // My solutions - I see that I could have simplified, This was before the instructor revealed their answer
     public static double convertToCentimeters(int heightInInches) {
         double centimeters =  heightInInches * 2.54;
         return centimeters;
@@ -30,6 +30,6 @@ public class Main {
     }
 
     public static double instructorConvertToCentimeters(int feet, int inches) {
-        return ((feet * 12) + inches) * 2.54;
+        return convertToCentimeters((feet*12) + inches);
     }
 }
